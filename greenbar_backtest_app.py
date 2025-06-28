@@ -28,7 +28,7 @@ for i in range(1, len(data) - 1):
     prev_day = data.iloc[i - 1]
     next_day = data.iloc[i + 1]
 
-    if prev_day['Close'] > prev_day['Open']:
+    if prev_day["Close"] > prev_day["Open"]:
         high = prev_day['High']
         low = prev_day['Low']
         entry = high - (high - low) / 3
